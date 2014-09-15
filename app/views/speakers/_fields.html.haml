@@ -10,9 +10,13 @@
 
     .clearfix
     %p
-      This information will be
+      This information will be initially
       %strong hidden
-      from the review committee.
+      from the review committee while talks are being shortlisted. For final proposal selection, this information will be
+      %strong visible
+      to the review committee. Please see our
+      = link_to 'selection process', 'http://cfp.rubyconf.org.au/events/2015'
+      for more information.
 
     = speaker_fields.hidden_field :person_id, value: speaker.person_id
 
