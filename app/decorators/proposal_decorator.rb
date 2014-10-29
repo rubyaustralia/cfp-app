@@ -49,6 +49,10 @@ class ProposalDecorator < ApplicationDecorator
     speaker ? speaker.name : ''
   end
 
+  def speaker_id
+    speaker ? speaker.id : ''
+  end
+
   def speaker_names
     object.speakers.map(&:name).join(', ')
   end
