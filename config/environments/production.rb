@@ -79,7 +79,7 @@ CFPApp::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }
-  config.action_mailer.default_options = {from: 'rubyconf@rubycentral.org'}
+  config.action_mailer.default_options = {from: 'organisers@rubyconf.org.au'}
 
   ActionMailer::Base.smtp_settings = {
     :port =>           '587',
