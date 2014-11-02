@@ -29,7 +29,7 @@ namespace :proposals do
 
   def reject_proposal(event, proposal)
     puts "rejecting: #{proposal.id}: #{proposal.speakers.first.email} - #{proposal.title}"
-    proposal.reject
+    proposal.finalize
     Organizer::ProposalMailer.reject_email(event, proposal).deliver
   end
 end
