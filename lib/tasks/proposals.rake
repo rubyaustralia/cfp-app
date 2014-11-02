@@ -18,6 +18,15 @@ namespace :proposals do
     end
   end
 
+  task :reject_soft_rejected, [:event_slug] => :environment do |t, args|
+    event = Event.where(slug: args[:event_slug]).first
+    puts "Event: #{event.name}"
+    puts "  found #{event.proposals.soft_rejected.count} proposals in soft rejected state"
+    event.proposals.soft_rejected.each do |proposal|
+      reject_proposal(event, proposal)
+    end
+  end
+
   def reject_proposal(event, proposal)
     puts "rejecting: #{proposal.id}: #{proposal.speakers.first.email} - #{proposal.title}"
     proposal.reject
