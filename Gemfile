@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.1.4'
 
-gem 'rails', '4.1.2'
+gem 'rails', '4.1.7'
 
 gem 'pg'
 
@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-datatables-rails', '~> 1.12.2'
 gem 'uglifier', '>= 1.3.0'
-gem 'sass-rails', '~> 4.0.1'
+gem 'sass-rails', '5.0.0.beta1'
 gem 'haml', '~> 4.0.4'
 gem 'bootstrap-sass', '~> 3.0.2.1'
 
