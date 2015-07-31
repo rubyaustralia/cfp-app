@@ -17,6 +17,8 @@ class Person < ActiveRecord::Base
   has_many :reviewer_events, through: :reviewer_participants, source: :event
   has_many :organizer_participants, -> { where(role: 'organizer') }, class_name: 'Participant'
   has_many :organizer_events, through: :organizer_participants, source: :event
+  has_many :mentor_participants, -> { where(role: 'mentor') }, class_name: 'Participant'
+  has_many :mentor_events, through: :mentor_participants, source: :event
   has_many :speakers,     dependent: :destroy
   has_many :ratings,      dependent: :destroy
   has_many :comments,     dependent: :destroy
@@ -100,6 +102,14 @@ class Person < ActiveRecord::Base
 
   def reviewer_for_event?(event)
     participants.reviewer.for_event(event).size > 0
+  end
+
+  def mentor?
+    mentor_events.count > 0
+  end
+
+  def mentor_for_event?(event)
+    participants.mentor.for_event(event).size > 0
   end
 
   def rating_for(proposal, build_new = true)

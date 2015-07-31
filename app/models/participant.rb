@@ -7,6 +7,7 @@ class Participant < ActiveRecord::Base
 
   scope :organizer, -> { where(role: 'organizer')}
   scope :reviewer, -> { where(role: ['reviewer', 'organizer'])}
+  scope :mentor, -> { where(role: 'mentor')}
 
   validates :person, :event, :role, presence: true
 end
