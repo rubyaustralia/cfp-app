@@ -13,6 +13,10 @@
         = f.label :bio
         = f.text_area :bio, class: 'form-control', placeholder: 'Enter your bio', rows: 7, maxlength: 500
         %p.help-block Bio is limited to 500 characters.
+      .checkbox
+        = f.label :mentor do
+          = f.check_box :mentor
+          I am willing to mentor
     %fieldset.col-md-4
       %h2 Identity Services
       %p

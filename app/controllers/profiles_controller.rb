@@ -19,6 +19,6 @@ class ProfilesController < ApplicationController
   private
 
   def person_params
-    params.require(:person).permit(:bio, :gender, :ethnicity, :country, :name, :email)
+    params.require(:person).permit(:bio, :gender, :ethnicity, :country, :name, :email, :mentor)
   end
 end
