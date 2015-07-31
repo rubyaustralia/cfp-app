@@ -4,6 +4,10 @@ module ApplicationHelper
     @title
   end
 
+  def code_of_conduct_link
+    link_to 'Code of Conduct', 'http://ruby.org.au/code-of-conduct.html'
+  end
+
   def demographic_label(demographic)
     case demographic
     when :gender then "Gender Identity"

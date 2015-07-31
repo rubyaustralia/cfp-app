@@ -12,4 +12,8 @@ class HomeController < ApplicationController
     end
   end
 
+  def mentorship
+
+  end
+
 end

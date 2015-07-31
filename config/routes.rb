@@ -97,6 +97,8 @@ CFPApp::Application.routes.draw do
   get '/signout' => 'sessions#destroy', as: :signout
   resource :session, only: [:new, :create, :destroy]
 
+  get '/mentorship' => 'home#mentorship', as: :mentorship
+
   resource :profile, only: [:edit, :update]
   resource :public_comments, only: [:create], controller: :comments, type: 'PublicComment'
   resource :internal_comments, only: [:create], controller: :comments, type: 'InternalComment'

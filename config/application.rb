@@ -32,6 +32,8 @@ module CFPApp
       g.assets false
       g.template_engine :haml
     end
+
+    config.app_name = 'Call for Proposals'
   end
 end
 
