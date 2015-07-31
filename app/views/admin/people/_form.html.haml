@@ -12,6 +12,10 @@
       %p
         = f.label :bio
         = f.text_area :bio, class: 'form-control', placeholder: 'Bio', rows: 8
+      .checkbox
+        = f.label :admin do
+          = f.check_box :admin
+          Administrator
 
     %fieldset.col-md-4
       %h2 Demographics
