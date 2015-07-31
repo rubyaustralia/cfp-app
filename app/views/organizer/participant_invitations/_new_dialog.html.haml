@@ -8,7 +8,7 @@
           = f.error_notification
 
           = f.input :email
-          = f.input :role, as: :select, collection: [ 'reviewer', 'organizer' ]
+          = f.input :role, as: :select, collection: [ 'mentor', 'reviewer', 'organizer' ]
 
         .modal-footer
           %button.btn.btn-default{'data-dismiss' => "modal"} Cancel
