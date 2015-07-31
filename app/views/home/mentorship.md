@@ -41,3 +41,6 @@ We recommend of at least taking up the offer for a post-talk review - good, hone
 
 ## Feedback
 We are trying something new here. Please give us feedback after the event on how well this worked for you.
+
+## Credit
+All credit for the mentorship program goes to [eurucamp](http://eurucamp.org) and [Ruby Berlin e.V.](http://rubyberlin.org/)
