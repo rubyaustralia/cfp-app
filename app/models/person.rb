@@ -129,4 +129,5 @@ end
 #  admin        :boolean          default(FALSE)
 #  created_at   :datetime
 #  updated_at   :datetime
+#  mentor       :boolean          default(FALSE)
 #
