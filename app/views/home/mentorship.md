@@ -10,7 +10,7 @@ We want to make sure that every speaker has someone assigned to turn to in case 
 
 ## Being a Mentor
 ### Volunteering as a mentor
-Mentors sign up through our [CFP app](http://cfp.rubyconf.org.au). Navigate to your profile section and check the mentor box. We will get in contact with you to assign speakers to you. You will also be able to read submissions that are up for review and give feedback.
+Mentors sign up through our [CFP app](http://cfp.rubyconf.org.au). Navigate to your profile section and check the mentor box. We will get in contact with you to assign speakers to you.
 
 ### The Mentors Job
 Mentors are asked to help speakers to flesh out their talks and bring their ideas on stage. This includes review of slides, hints with design and getting to them and answering any questions the speaker might have. Your role is a reassuring one.
