@@ -23,3 +23,7 @@
         %b Bio:
         %br
         = speaker.person.bio
+      %p
+        %b Willing to mentor?
+        %br
+        = speaker.person.willing_to_mentor? ? 'Yes' : 'No'

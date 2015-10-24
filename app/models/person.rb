@@ -125,6 +125,10 @@ class Person < ActiveRecord::Base
     self.participants.collect {|p| p.role}.uniq.join(", ")
   end
 
+  def willing_to_mentor?
+    mentor
+  end
+
 end
 
 # == Schema Information
