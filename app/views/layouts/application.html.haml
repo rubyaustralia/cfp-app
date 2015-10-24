@@ -61,6 +61,7 @@
                       %li
                         = link_to event, organizer_event_path(event)
                         %ul
+                          %li= link_to 'Event', organizer_event_path(event)
                           %li= link_to 'Proposals', organizer_event_proposals_path(event)
                           %li= link_to 'Program', organizer_event_program_path(event)
                           %li= link_to "Schedule", organizer_event_sessions_path(event)

@@ -4,7 +4,7 @@ class Speaker < ActiveRecord::Base
 
   has_many :proposals, through: :person
 
-  delegate :name, :email, :gravatar_hash, to: :person
+  delegate :name, :email, :gravatar_hash, :mentor, to: :person
 
   validates :bio, length: { maximum: 500 }
 end
