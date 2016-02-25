@@ -82,12 +82,13 @@ CFPApp::Application.configure do
   config.action_mailer.default_options = {from: 'organisers@rubyconf.org.au'}
 
   ActionMailer::Base.smtp_settings = {
-    :port =>           '587',
-    :address =>        'smtp.mandrillapp.com',
-    :user_name =>      ENV['MANDRILL_USERNAME'],
-    :password =>       ENV['MANDRILL_APIKEY'],
-    :domain =>         'heroku.com',
-    :authentication => :plain
+    :port                 => '25',
+    :address              => ENV['POSTMARK_SMTP_SERVER'],
+    :user_name            => ENV['POSTMARK_API_TOKEN'],
+    :password             => ENV['POSTMARK_API_TOKEN'],
+    :domain               => 'rubyconf.org.au',
+    :authentication       => :cram_md5,
+    :enable_starttls_auto => true
   }
   ActionMailer::Base.delivery_method = :smtp
 
