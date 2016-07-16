@@ -49,7 +49,7 @@ end
 
 group :development, :test do
   gem 'capybara', '>= 2.2'
-  # gem 'capybara-webkit'
+  gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'dotenv-rails'
   gem 'factory_girl_rails'
